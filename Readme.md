@@ -1,42 +1,14 @@
 
-Templatized version of  [BogCyg's](https://github.com/BogCyg/BookCpp) EmptyPro sample. 
-This is a GitHub template for starting a Cmake/C++ template for Mac, Linux or Windows.
+A program to count words found in a set of lines. 
 
-Works great with Clion but can be used with any IDE that supports Cmake.
+"Let a user search a given file for words that might occur in it."
 
-No need to fork or clone this repo directly, just click "Use this template" and clone locally. 
-
-#Instructions:
- 
-Assuming your project is named "MyPro", proceed as follows:
-
-1. After clicking use this template clone your repo and name it "MyPro".
-
-2. In the ./MyPro/CMakeLists.txt find the line
-set( PROJECT_NAME EmptyPro )
-and change "EmptyPro" to the name of your project, i.e. "MyPro" in our example
-set( PROJECT_NAME MyPro )
-
-3. Copy/create ALL your source files to the ./MyPro/src
-and ALL headers to the ./MyPro/include
-
-4. Build your project in accordance with the common scheme (below).
-
-=================================
-To build a project do as follows:
-
-1. Depending on your OS change directory to the one:
-build_win
-build_linux
-build_mac
-
-2. Open terminal and set current directory to the above one.
-
-3. type 
-cmake ..
-
-4. Go to the build_xxx directory and launch your project.
-
-
+For example , searching "element" would return:
+element occurs 112 times
+    -(line 36) A set element cointas only a key;
+    -(line 158) operator creates a new element
+    -(line 160) Regardless of whether the element
+    -(line 168) When we fetch an element from a map, we
+    -(line 214) If the element is not found, find returns. 
 
 
