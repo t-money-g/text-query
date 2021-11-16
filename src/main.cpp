@@ -5,7 +5,7 @@
 // ==========================================================================
 
 // Macro to determine whether to run tests or skip the runner
-#define TESTS_ENABLED 1
+#define TESTS_ENABLED 0
 #define CATCH_CONFIG_RUNNER
 #include <catch2/catch.hpp>
 #include <iostream>
