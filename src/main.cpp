@@ -4,13 +4,31 @@
 //
 // ==========================================================================
 
-// Macro to determine whether to run tests or skip the runner
+/// Macro to determine whether to run tests or skip the runner
 #define TESTS_ENABLED 0
 #define CATCH_CONFIG_RUNNER
 #include <catch2/catch.hpp>
 #include <iostream>
-#include "empty.h"
+#include <string>
+#include <fstream>
 
+using std::string;
+using std::cout, std::cin;
+
+/// using the text query class r
+void runQueries(std::ifstream &infile)
+{
+    /// infile is an fstream that is the file we want to query
+   // TextQuery tq(infile);       // store the file and build the query map
+    while(true) {
+        cout << "enter word to look for, or q to quit: ";
+        string s;
+        /// stop if we hit end of file on the input or if a 'q' is entered
+        if(!(cin >> s) || s == "q") break;
+      //  print(cout, tq.query(s)) << endl;
+    }
+
+}
 
 int main(int argc, char* argv[])
 {
